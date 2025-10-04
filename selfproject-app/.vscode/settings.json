@@ -5,7 +5,7 @@
   "idf.openOcdConfigs": [
     "board/esp32s3-builtin.cfg"
   ],
-  "idf.portWin": "COM1",
+  "idf.portWin": "COM6",
   "idf.toolsPathWin": "e:\\ESP-IDF-Container-Directory",
   "idf.customExtraVars": {
     "IDF_TARGET": "esp32s3"
@@ -16,5 +16,9 @@
     "--query-driver=e:\\ESP-IDF-Container-Directory\\tools\\xtensa-esp-elf\\esp-14.2.0_20241119\\xtensa-esp-elf\\bin\\xtensa-esp32-elf-gcc.exe",
     "--compile-commands-dir=${workspaceFolder}\\build"
   ],
-  "idf.flashType": "UART"
+  "idf.flashType": "UART",
+  "files.associations": {
+    "gpio.h": "c",
+    "led_strip.h": "c"
+  }
 }
